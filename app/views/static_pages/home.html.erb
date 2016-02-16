@@ -1,2 +1,13 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<% provide(:title, 'Home') %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>пробное | <%= yield(:title) %></title>
+  </head>
+  <body>
+  	<h1>Sample App</h1>
+<p> Это стартовая страница для супер-мега сайта.
+<a href="http://vignette1.wikia.nocookie.net/sims/images/0/0b/Hypnotoad.gif/revision/latest?cb=20130519180509"> Гипножаба!!! Поклоняйтесь гипножабе</a>
+</p>
+</body>
+</html>
