@@ -1,13 +1,11 @@
-<% provide(:title, 'Home') %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>пробное | <%= yield(:title) %></title>
-  </head>
-  <body>
-  	<h1>Sample App</h1>
-<p> Это стартовая страница для супер-мега сайта.
-<a href="http://vignette1.wikia.nocookie.net/sims/images/0/0b/Hypnotoad.gif/revision/latest?cb=20130519180509"> Гипножаба!!! Поклоняйтесь гипножабе</a>
-</p>
-</body>
-</html>
+<div class="center hero-unit">
+<h1>Sample App</h1>
+<h2>
+	Это стартовая страница супер-мега сайта.
+	<a href="http://vignette1.wikia.nocookie.net/sims/images/0/0b/Hypnotoad.gif/revision/latest?cb=20130519180509"> Гипножаба!!! Поклоняйтесь гипножабе</a>
+</h2>
+
+<%= link_to "Регистрируйся СЕЙЧАС, животное!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
