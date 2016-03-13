@@ -30,14 +30,14 @@ gem 'sdoc', '0.4.0', group: :doc
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+gem 'web-console', '~> 2.0', group: :development
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '3.4.0'
   gem 'sqlite3'
   gem 'rspec-rails'
-  gem 'web-console', '~> 2.0'
+  
   gem 'spring', '1.1.3'
 end
 
